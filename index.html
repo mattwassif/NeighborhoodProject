@@ -2,43 +2,45 @@
 <html>
 
 <head>
-    <title>Wakefield Demographics</title>
+    <title>Wakefield</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
+        html {
+            height: 100%;
         }
-
+        body {
+            background: linear-gradient(grey, white);
+            height: 100vh;
+            color: black;
+            display: flex;
+        }
         #text-container {
             width: 50%;
             padding: 20px;
-            float: left;
+        }
+        img {
+            height: auto;
+            max-width: 100%;
         }
 
         .image-container {
-            width: 50%;
-            float: right;
+            text-align: center; /* Center the label under the image */
+            margin-top: 10px; /* Add some space between image and label */
+        }
+
+        h1 {
             text-align: center;
         }
 
-        img {
-            width: 80%; /* Adjust the width as needed */
-            height: auto;
-            margin-top: 20px; /* Add some space between image and graph */
+        p {
+            color: black;
         }
 
-        .chart-container {
-            margin-top: 20px; /* Add some space between image and graph */
+        .statistics-container {
+            margin-top: 20px;
         }
 
-        .bar {
-            display: inline-block;
-            margin: 0 10px;
-        }
-
-        .bar-label {
-            margin-top: 5px;
+        .statistic {
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -50,40 +52,37 @@
         <hr>
 
         <p>
-            NYC Clean Heat Program, driven by The New York State Energy Research & Development Authority, has successfully transformed the city's energy landscape by eliminating heavy heating oils and significantly reducing PM2.5 emissions. The DEP Boiler Registration and Greener, Greater Buildings Plan further contribute to monitoring and improving environmental performance in buildings, emphasizing transparency and providing support for compliance. The city's efforts to transition to clean heating fuels, including the promotion of technologies like air and ground source pumps and the implementation of the Utility Rebate Program, demonstrate a commitment to achieving a 40% reduction in CO2 emissions and sourcing 70% of electricity from clean renewable energy by 2030. These initiatives collectively reflect New York's dedication to sustainability, environmental health, and a greener urban future.
+            <strong>HC3 Findings:</strong> NYC Clean Heat Program, driven by The New York State Energy Research & Development Authority, has successfully transformed the city's energy landscape by eliminating heavy heating oils and significantly reducing PM2.5 emissions. The DEP Boiler Registration and Greener, Greater Buildings Plan further contribute to monitoring and improving environmental performance in buildings, emphasizing transparency and providing support for compliance. The city's efforts to transition to clean heating fuels, including the promotion of technologies like air and ground source pumps and the implementation of the Utility Rebate Program, demonstrate a commitment to achieving a 40% reduction in CO2 emissions and sourcing 70% of electricity from clean renewable energy by 2030. These initiatives collectively reflect New York's dedication to sustainability, environmental health, and a greener urban future.
         </p>
+
+        <p>
+            <strong>HC4 Findings:</strong> New York City faces a challenging legal scenario with ambitious CO2 reduction targets of 40% by 2030 and 80% by 2050. Enacted through the Climate Mobilization Act, specifically under Local Law 97, the city's efforts are scrutinized, revealing varying progress among boroughs. The Bronx, in particular, lags behind with only a 7% decrease in emissions, presenting economic challenges for updating older buildings. The Department of Education contributes positively, achieving a 14% decline across all boroughs. The city must prioritize investment in boroughs like the Bronx, Queens, and Brooklyn to meet its net-zero goal by 2050. Additionally, worsening traffic congestion, notably in the South Bronx neighborhoods of Mott Haven and Port Morris, contributes to emissions and negatively impacts children's health. Overall, the city grapples with emission reduction strategies in various sectors, emphasizing the urgent need for comprehensive interventions.
+        </p>
+
+        <div class="statistics-container">
+            <h2>Wakefield Demographics and Statistics</h2>
+
+            <div class="statistic"><strong>Population (2021):</strong> 75,767</div>
+            <div class="statistic"><strong>Median Age:</strong> 37 years old</div>
+            <div class="statistic"><strong>Ethnicity:</strong> Predominantly black (63.68%)</div>
+            <div class="statistic"><strong>Median Household Income:</strong> $62,918 (slightly below the NYC median)</div>
+            <div class="statistic"><strong>Housing:</strong> Diverse range including single-family homes, multi-family residences, and apartment buildings</div>
+            <div class="statistic"><strong>Housing Occupancy:</strong> 77% renter-occupied, 23% owner-occupied</div>
+            <div class="statistic"><strong>Median Home Value:</strong> $495,000</div>
+            <div class="statistic"><strong>Average Cost of a One-Bedroom Apartment:</strong> Around $1,400 per month</div>
+            <div class="statistic"><strong>Total Households:</strong> 25,014</div>
+            <div class="statistic"><strong>Primary Household Types:</strong> Married couples(45%), Female householders(36%)</div>
+            <div class="statistic"><strong>Housing Occupancy Type:</strong> 60% renter-occupied, 40% owner-occupied</div>
+            <div class="statistic"><strong>District:</strong> District 12 of the Bronx</div>
+            <div class="statistic"><strong>Average Commute Time to Work:</strong> 47 minutes</div>
+            <div class="statistic"><strong>Education Levels:</strong> 31.3% with at least a high school degree, 20% with less than a high school diploma</div>
+            <div class="statistic"><strong>Dropout Rate:</strong> 5%</div>
+        </div>
     </div>
 
     <div class="image-container">
-        <img src="HC6.png" alt="Highlighted map from HC6">
+        <img src="HC6.png" alt="Highlighted map from HC6" width="300"> <!-- Adjusted image size -->
         <p><strong>Highlighted map from HC6</strong></p>
-    </div>
-
-    <div class="chart-container">
-        <!-- Your demographic bar graph here -->
-        <!-- Population Bar -->
-        <div class="bar" style="height: 20px; background-color: #3498db; width: 15%"></div>
-        <div class="bar-label">Population</div>
-
-        <!-- Median Age Bar -->
-        <div class="bar" style="height: 20px; background-color: #2ecc71; width: 15%"></div>
-        <div class="bar-label">Median Age</div>
-
-        <!-- Ethnicity Bar -->
-        <div class="bar" style="height: 20px; background-color: #e74c3c; width: 15%"></div>
-        <div class="bar-label">Ethnicity</div>
-
-        <!-- Median Income Bar -->
-        <div class="bar" style="height: 20px; background-color: #f39c12; width: 15%"></div>
-        <div class="bar-label">Median Household Income</div>
-
-        <!-- Median Home Value Bar -->
-        <div class="bar" style="height: 20px; background-color: #9b59b6; width: 15%"></div>
-        <div class="bar-label">Median Home Value</div>
-
-        <!-- Education Bar -->
-        <div class="bar" style="height: 20px; background-color: #34495e; width: 15%"></div>
-        <div class="bar-label">Education Level</div>
     </div>
 
 </body>
