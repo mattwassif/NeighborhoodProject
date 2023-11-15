@@ -7,25 +7,25 @@
         html {
             height: 100%;
         }
-        .center {
-            padding: 10px 20px;
-            text-align: center;
-        }
-        img {
-            height: 500px;
-            width: 500px;
-        }
-        font {
-            font-family: "Trirong", serif;
-        }
-    </style>
-</head>
-<body>
-    <style>
         body {
             background: linear-gradient(grey, skyblue) no-repeat;
-            height: 50%;
+            height: 100%; /* Adjusted to cover the entire height */
             color: black;
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-around; /* Space around the content */
+            align-items: center; /* Center vertically */
+        }
+
+        #text-container {
+            width: 50%;
+            padding: 20px;
+        }
+        img {
+            height: auto;
+            max-width: 100%; /* Ensure the image doesn't exceed its container */
+        }
+        h1 {
+            text-align: center;
         }
         p {
             color: black;
@@ -33,7 +33,6 @@
         th {
             color: teal;
         }
-
         ul,
         ol {
             color: black;
@@ -42,66 +41,24 @@
             color: teal;
         }
     </style>
+</head>
 
-    <center>
+<body>
+
+    <div id="text-container">
         <h1><b>Wakefield</b></h1>
-    </center>
-
-    <center>
         <hr>
 
         <p>
-             NYC Clean Heat Program, driven by The New York State Energy Research & Development Authority, has successfully transformed the city's energy landscape by eliminating heavy heating oils and significantly 
-            reducing PM2.5 emissions. The DEP Boiler Registration and Greener, Greater Buildings Plan further contribute tomonitoring and improving environmental performance in buildings, emphasizing transparency and
+            NYC Clean Heat Program, driven by The New York State Energy Research & Development Authority, has successfully transformed the city's energy landscape by eliminating heavy heating oils and significantly 
+            reducing PM2.5 emissions. The DEP Boiler Registration and Greener, Greater Buildings Plan further contribute to monitoring and improving environmental performance in buildings, emphasizing transparency and
             providing support for compliance. The city's efforts to transition to clean heating fuels, including the promotion of technologies like air and ground source pumps and the implementation of the Utility Rebate
             Program, demonstrate a commitment to achieving a 40% reduction in CO2 emissions and sourcing 70% of electricity from clean renewable energy by 2030. These initiatives collectively reflect New York's dedication
             to sustainability, environmental health, and a greener urban future.
-
-
-
-
-
-
         </p>
+    </div>
 
-        <!-- Move the img tag here to display it below the paragraph -->
-        <img src="HC6.png" alt="Description of the image">
-    </center>
-
-    </table>
-    </center>
-    </table><br>
-
-    <h4><u> Things Cats Love </u></h4>
-    <ul>
-        <li>Cat Tree</li>
-        <li>Clean Litterbox</li>
-        <li>Small spaces</li>
-    </ul>
-    <h4><u>3 Things Cats Hate </u></h4>
-    <ol>
-        <li>Car Rides</li>
-        <li>Other Cats</li>
-        <li>Strangers</li>
-    </ol>
-
-    <table>
-        <form action="db.php" method="GET">
-            <h2>Submit A Cat Photo! </h2>
-            <h3> What is your cat like? </h3>
-
-            <label><input type="radio" name="indoor-outdoor"> Indoor</label>
-            <label><input type="radio"> Outdoor</label><br>
-            <label><input type="checkbox"> Loving</label>
-            <label><input type="checkbox"> Lazy</label>
-            <label><input type="checkbox"> Energetic</label><br>
-            <input type="text" placeholder="submit a picture of your cat!" required>
-            <button>Submit</button>
-        </form>
-    </table>
-
-    <h4>Click <a href="https://unsplash.com/s/photos/cat">here</a> to view more cat photos!.</h4>
-    <hr>
+    <img src="HC6.png" alt="Description of the image">
 
 </body>
 
