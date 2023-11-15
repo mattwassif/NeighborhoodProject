@@ -1,8 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-<img src="C:\Users\mattw\Desktop\python\HC6.png">
+<py
+import folium
+import pandas as pd
 
+clean_heat = pd.read_csv('clean_heat_dataset.csv')
+neighborhood = clean_heat[clean_heat['NTA'] == 'Woodlawn-Wakefield'] #Check column for all buuldings in wakefield
+mapBronx = folium.Map(location=[40.8448, -73.8648]) #Bronx's Latitude and Longitude 
+
+for index, row in neighborhood.iterrows():
+    lat = row['Latitude']
+    lon = row['Longitude']
+    name = row['Street Address']
+    zipcode = str(row['Postcode'])  # Convert to string for matching
+
+    # Check if the zipcode is not "10470" (Woodlawn's zipcode) to separate the two neighborhoods
+    if "10470" not in zipcode:
+        newMarker = folium.Marker([lat, lon], popup=name)
+        newMarker.add_to(mapBronx)
+
+mapBronx.save(outfile='buildingLocations.html')
+mapBronx.show_in_browser()
+       >py
        
     <title> 
         Wakefield
