@@ -36,6 +36,8 @@
             margin-bottom: 10px; /* Adjust the gap between paragraphs */
         }
         .statistics-container {
+            margin-top: 0; /* Adjusted margin top */
+            margin-bottom: 0; /* Adjusted margin bottom */
         }
         .statistics-list {
             list-style-type: none;
@@ -43,10 +45,25 @@
             margin: 0; /* Remove margin */
         }
         .statistic {
+            margin-bottom: 5px; /* Adjusted gap between statistics */
+        }
+        .additional-images {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px; /* Adjusted margin top */
+            margin-bottom: 10px; /* Adjusted margin bottom */
+        }
+        .img {
+            width: 45%; /* Adjust the width as needed */
         }
         .notebook-link {
             margin-top: 20px; /* Adjusted margin top */
             font-size: 20px; /* Increased font size */
+        }
+        iframe {
+            width: 45%; /* Adjust the width as needed */
+            height: 400px; /* Adjust the height as needed */
+            border: none; /* Remove border */
         }
         /* Added style to remove gray rectangle at the bottom */
         html, body {
@@ -90,7 +107,7 @@
                 <li><strong>Dropout Rate:</strong> 5%</li>
             </ul>
         </div>
-       <iframe src="buildingLocations.html" width="600" height="400" frameborder="0" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <iframe src="buildingLocations.html" frameborder="0" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
     </div>
     <div class="image-container">
         <img src="HC6.png" alt="Highlighted map from HC6" width="600"> <!-- Adjusted image size -->
