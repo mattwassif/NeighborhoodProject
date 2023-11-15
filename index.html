@@ -20,11 +20,12 @@
         img {
             height: auto;
             max-width: 100%;
-       
+            display: block; /* Align image to the center */
+            margin: 0 auto; /* Center the image */
         }
         .image-container {
             text-align: center; /* Center the label under the image */
-            margin-top: 5px; /* Add some space between image and label */
+            margin-top: 10px; /* Add some space between image and label */
         }
         h1 {
             text-align: center;
@@ -37,24 +38,28 @@
             margin-bottom: 10px; /* Adjust the gap between paragraphs */
         }
         .statistics-container {
-          /* margin-top: 10px; Adjusted margin top */
+            margin-top: 5px; /* Adjusted margin top */
+            margin-bottom: 5px; /* Adjusted margin bottom */
         }
         .statistics-list {
             list-style-type: none;
             padding: 0;
         }
         .statistic {
-            margin-bottom: 10px;
+            margin-bottom: 5px; /* Adjusted gap between statistics */
         }
         .additional-images {
             display: flex;
-            margin-top: 10px; /* Adjusted margin top */
+            justify-content: space-between;
+            margin-top: 5px; /* Adjusted margin top */
+            margin-bottom: 5px; /* Adjusted margin bottom */
         }
         .additional-image {
             width: 45%; /* Adjust the width as needed */
         }
         .notebook-link {
-            margin-top: 10px; /* Adjusted margin top */
+            margin-top: 15px; /* Adjusted margin top */
+            font-size: 18px; /* Increased font size */
         }
         /* Added style to remove gray rectangle at the bottom */
         html, body {
