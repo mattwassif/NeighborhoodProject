@@ -1,89 +1,128 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Wakefield</title>
     <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            overflow-x: hidden;
+        body {
+            background: linear-gradient(grey, white);
+            height: 100vh;
+            color: black;
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+            margin: 0;
+            /* Remove default margin */
         }
 
         #text-container {
-            width: 50%;
+            flex: 1;
             padding: 20px;
         }
 
         .image-container {
+            flex: 1;
             text-align: center;
+            /* Center the label under the image */
             margin-top: 10px;
-            flex-grow: 1;
+            /* Add some space between image and label */
         }
 
         h1 {
             text-align: center;
             margin-top: 5px;
+            /* Adjust the gap between the title and paragraphs */
             margin-bottom: 10px;
+            /* Adjust the gap between the title and paragraphs */
             font-size: 24px;
+            /* Adjusted font size for the title */
         }
 
         hr {
             border: none;
+            /* Remove border */
             height: 2px;
+            /* Adjusted height of the line */
             background-color: black;
+            /* Color of the line */
         }
 
         p {
             color: black;
             margin-bottom: 10px;
+            /* Adjust the gap between paragraphs */
         }
 
         .statistics-container {
             margin-top: 0;
+            /* Adjusted margin top */
             margin-bottom: 0;
+            /* Adjusted margin bottom */
         }
 
         .statistics-list {
             list-style-type: none;
             padding: 0;
             margin: 0;
+            /* Remove margin */
         }
 
         .statistic {
             margin-bottom: 5px;
+            /* Adjusted gap between statistics */
         }
 
         .additional-images {
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
+            align-items: center;
             margin-top: 5px;
+            /* Adjusted margin top */
             margin-bottom: 5px;
+            /* Adjusted margin bottom */
         }
 
         .img {
-            width: 45%;
+            width: 100%;
+            max-width: 100%;
+            /* Adjust the width as needed */
             margin-top: 5px;
+            /* Adjusted margin top for images */
+        }
+
+        .side-by-side {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .side-by-side .img {
+            width: 48%;
         }
 
         .notebook-link {
             margin-top: 10px;
+            /* Adjusted margin top */
             font-size: 20px;
+            /* Increased font size */
         }
 
         iframe {
             width: 45%;
+            /* Adjust the width as needed */
             height: 400px;
+            /* Adjust the height as needed */
             border: none;
+            /* Remove border */
         }
 
-        .img-container {
-            text-align: center;
+        /* Added style to remove gray rectangle at the bottom */
+        html,
+        body {
+            overflow-x: hidden;
         }
     </style>
 </head>
+
 <body>
     <div id="text-container">
         <h1><b>Wakefield</b></h1>
@@ -122,19 +161,20 @@
         </div>
     </div>
     <div class="image-container">
-        <div class="img-container">
+        <div class="additional-images">
+            <div class="side-by-side">
+                <iframe src="buildingLocations.html" frameborder="0"></iframe>
+                <img src="HC6.png" alt="Highlighted map from HC6" class="img">
+            </div>
             <p><strong>Highlighted map from HC6</strong></p>
-            <img src="HC6.png" alt="Highlighted map from HC6">
+            <div class="side-by-side">
+                <img src="fuelwakefield.png" alt="Fuel in Wakefield" class="img">
+                <img src="racewakefield.png" alt="Race Distribution in Wakefield" class="img">
+            </div>
+            <div>
+            </div>
         </div>
-        <div class="img-container">
-            <p><strong>Fuel Usage in Wakefield</strong></p>
-            <img src="fuelwakefield.png" alt="Fuel in Wakefield" class="img">
-        </div>
-        <div class="img-container">
-            <p><strong>Race Distribution In Wakefield</strong></p>
-            <img src="racewakefield.png" alt="Race Distribution in Wakefield" class="img">
-        </div>
-        <iframe src="buildingLocations.html" frameborder="0"></iframe>
     </div>
 </body>
+
 </html>
