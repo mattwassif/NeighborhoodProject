@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_449340166487f487d0d63e442e234923 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_449340166487f487d0d63e442e234923" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_449340166487f487d0d63e442e234923 = L.map(
+                "map_449340166487f487d0d63e442e234923",
+                {
+                    center: [40.8448, -73.8648],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8361e86632bafb02e11dd2178d507039 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_8361e86632bafb02e11dd2178d507039.addTo(map_449340166487f487d0d63e442e234923);
+    
+            var marker_6ff0b378339b3a83f9120b84a2d2eefb = L.marker(
+                [40.89451, -73.858004],
+                {}
+            ).addTo(map_449340166487f487d0d63e442e234923);
+        
+    
+        var popup_fdf46c317fd9368b8428348f36bbad89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04ec52ffa2194aeee4f716127f0aa607 = $(`<div id="html_04ec52ffa2194aeee4f716127f0aa607" style="width: 100.0%; height: 100.0%;">675 EAST 234 STREET</div>`)[0];
+                popup_fdf46c317fd9368b8428348f36bbad89.setContent(html_04ec52ffa2194aeee4f716127f0aa607);
+            
+        
+
+        marker_6ff0b378339b3a83f9120b84a2d2eefb.bindPopup(popup_fdf46c317fd9368b8428348f36bbad89)
+        ;
+
+        
+    
+    
+            var marker_65699cdacafbd9fb54bd11402a8f0dff = L.marker(
+                [40.894676, -73.858517],
+                {}
+            ).addTo(map_449340166487f487d0d63e442e234923);
+        
+    
+        var popup_264b101832c57a498b0ab52620c4cfd4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55fd5fbec3961ea23a85194a9aceff80 = $(`<div id="html_55fd5fbec3961ea23a85194a9aceff80" style="width: 100.0%; height: 100.0%;">655 EAST 234 STREET</div>`)[0];
+                popup_264b101832c57a498b0ab52620c4cfd4.setContent(html_55fd5fbec3961ea23a85194a9aceff80);
+            
+        
+
+        marker_65699cdacafbd9fb54bd11402a8f0dff.bindPopup(popup_264b101832c57a498b0ab52620c4cfd4)
+        ;
+
+        
+    
+    
+            var marker_c387ac94d6076abaff9514e8d6065188 = L.marker(
+                [40.895149, -73.857452],
+                {}
+            ).addTo(map_449340166487f487d0d63e442e234923);
+        
+    
+        var popup_f8635854533c311285249af4ef02138b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b6e1b20bead491d1b451cfc7b17fe80 = $(`<div id="html_6b6e1b20bead491d1b451cfc7b17fe80" style="width: 100.0%; height: 100.0%;">680 EAST 235 STREET</div>`)[0];
+                popup_f8635854533c311285249af4ef02138b.setContent(html_6b6e1b20bead491d1b451cfc7b17fe80);
+            
+        
+
+        marker_c387ac94d6076abaff9514e8d6065188.bindPopup(popup_f8635854533c311285249af4ef02138b)
+        ;
+
+        
+    
+    
+            var marker_3929f39b73de0e5392c6fe7a8247e915 = L.marker(
+                [40.895226, -73.854938],
+                {}
+            ).addTo(map_449340166487f487d0d63e442e234923);
+        
+    
+        var popup_247da2f19311dc8b5b5352c09c5e9322 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_938a69f94788ef9bc4eb5f0280a83711 = $(`<div id="html_938a69f94788ef9bc4eb5f0280a83711" style="width: 100.0%; height: 100.0%;">730 EAST 236 STREET</div>`)[0];
+                popup_247da2f19311dc8b5b5352c09c5e9322.setContent(html_938a69f94788ef9bc4eb5f0280a83711);
+            
+        
+
+        marker_3929f39b73de0e5392c6fe7a8247e915.bindPopup(popup_247da2f19311dc8b5b5352c09c5e9322)
+        ;
+
+        
+    
+    
+            var marker_93ba1427a212e8344762d3152244174d = L.marker(
+                [40.89194, -73.852775],
+                {}
+            ).addTo(map_449340166487f487d0d63e442e234923);
+        
+    
+        var popup_1c65a03c729290f260155a0ad3168ad5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75faaffcc0a92b1fcdf20d50c8378aee = $(`<div id="html_75faaffcc0a92b1fcdf20d50c8378aee" style="width: 100.0%; height: 100.0%;">855 EAST 233 STREET</div>`)[0];
+                popup_1c65a03c729290f260155a0ad3168ad5.setContent(html_75faaffcc0a92b1fcdf20d50c8378aee);
+            
+        
+
+        marker_93ba1427a212e8344762d3152244174d.bindPopup(popup_1c65a03c729290f260155a0ad3168ad5)
+        ;
+
+        
+    
+    
+            var marker_d91431bbbc3d9563d2e7272a26677b3f = L.marker(
+                [40.896666, -73.858939],
+                {}
+            ).addTo(map_449340166487f487d0d63e442e234923);
+        
+    
+        var popup_5f97dfcc2ef00a05cab921d2af9dda89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9a625a7bf3e4452ca424ea325cbd315 = $(`<div id="html_c9a625a7bf3e4452ca424ea325cbd315" style="width: 100.0%; height: 100.0%;">4305 CARPENTER AVENUE</div>`)[0];
+                popup_5f97dfcc2ef00a05cab921d2af9dda89.setContent(html_c9a625a7bf3e4452ca424ea325cbd315);
+            
+        
+
+        marker_d91431bbbc3d9563d2e7272a26677b3f.bindPopup(popup_5f97dfcc2ef00a05cab921d2af9dda89)
+        ;
+
+        
+    
+    
+            var marker_3d54a02fc4dd2f25d2dd943998b7ab5c = L.marker(
+                [40.895725, -73.856551],
+                {}
+            ).addTo(map_449340166487f487d0d63e442e234923);
+        
+    
+        var popup_436d2ce05596023cca07a18befcee15f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf83d7bd263f0d6d881cec3ea9a483f4 = $(`<div id="html_bf83d7bd263f0d6d881cec3ea9a483f4" style="width: 100.0%; height: 100.0%;">693 EAST 236 STREET</div>`)[0];
+                popup_436d2ce05596023cca07a18befcee15f.setContent(html_bf83d7bd263f0d6d881cec3ea9a483f4);
+            
+        
+
+        marker_3d54a02fc4dd2f25d2dd943998b7ab5c.bindPopup(popup_436d2ce05596023cca07a18befcee15f)
+        ;
+
+        
+    
+    
+            var marker_872cf8a7d334727e7f7e91fd15053b08 = L.marker(
+                [40.895671, -73.855093],
+                {}
+            ).addTo(map_449340166487f487d0d63e442e234923);
+        
+    
+        var popup_07c91033e1fecf981e4e2d0986835025 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fc395f3aeb24148a6b29bc0c88edbb6 = $(`<div id="html_9fc395f3aeb24148a6b29bc0c88edbb6" style="width: 100.0%; height: 100.0%;">4305 FURMAN AVENUE</div>`)[0];
+                popup_07c91033e1fecf981e4e2d0986835025.setContent(html_9fc395f3aeb24148a6b29bc0c88edbb6);
+            
+        
+
+        marker_872cf8a7d334727e7f7e91fd15053b08.bindPopup(popup_07c91033e1fecf981e4e2d0986835025)
+        ;
+
+        
+    
+    
+            var marker_75138a179a2155989f268278e7ec863f = L.marker(
+                [40.896672, -73.854501],
+                {}
+            ).addTo(map_449340166487f487d0d63e442e234923);
+        
+    
+        var popup_33c8728b3a5c1e7b0bbc108e7b35f25f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_772a3f2b784b8336f3cd9dfc93dd8574 = $(`<div id="html_772a3f2b784b8336f3cd9dfc93dd8574" style="width: 100.0%; height: 100.0%;">4350 FURMAN AVENUE</div>`)[0];
+                popup_33c8728b3a5c1e7b0bbc108e7b35f25f.setContent(html_772a3f2b784b8336f3cd9dfc93dd8574);
+            
+        
+
+        marker_75138a179a2155989f268278e7ec863f.bindPopup(popup_33c8728b3a5c1e7b0bbc108e7b35f25f)
+        ;
+
+        
+    
+    
+            var marker_5f721f3c7cac607ac78f584b81c4b6f9 = L.marker(
+                [40.897242, -73.854117],
+                {}
+            ).addTo(map_449340166487f487d0d63e442e234923);
+        
+    
+        var popup_8e7db1bf0f166945b9c69195f32a59d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3014370e0686c381af8101f7196e2b7 = $(`<div id="html_b3014370e0686c381af8101f7196e2b7" style="width: 100.0%; height: 100.0%;">4360 FURMAN AVENUE</div>`)[0];
+                popup_8e7db1bf0f166945b9c69195f32a59d4.setContent(html_b3014370e0686c381af8101f7196e2b7);
+            
+        
+
+        marker_5f721f3c7cac607ac78f584b81c4b6f9.bindPopup(popup_8e7db1bf0f166945b9c69195f32a59d4)
+        ;
+
+        
+    
+    
+            var marker_b6f697cc58b46c31266607c9f2946076 = L.marker(
+                [40.897645, -73.853797],
+                {}
+            ).addTo(map_449340166487f487d0d63e442e234923);
+        
+    
+        var popup_b860421de66b1a7bd45ddc71a1b4ebc9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae7947c4b0f970c0b96c34bf61234c7b = $(`<div id="html_ae7947c4b0f970c0b96c34bf61234c7b" style="width: 100.0%; height: 100.0%;">4382 FURMAN AVENUE</div>`)[0];
+                popup_b860421de66b1a7bd45ddc71a1b4ebc9.setContent(html_ae7947c4b0f970c0b96c34bf61234c7b);
+            
+        
+
+        marker_b6f697cc58b46c31266607c9f2946076.bindPopup(popup_b860421de66b1a7bd45ddc71a1b4ebc9)
+        ;
+
+        
+    
+    
+            var marker_ced951856199dac30ac8ca347664ec0b = L.marker(
+                [40.897077, -73.84524],
+                {}
+            ).addTo(map_449340166487f487d0d63e442e234923);
+        
+    
+        var popup_2b057342484ee7eb6c3d6ed6538fa78e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_933fa90ae65abbac4526c3e96c87f17a = $(`<div id="html_933fa90ae65abbac4526c3e96c87f17a" style="width: 100.0%; height: 100.0%;">4300 BAYCHESTER AVENUE</div>`)[0];
+                popup_2b057342484ee7eb6c3d6ed6538fa78e.setContent(html_933fa90ae65abbac4526c3e96c87f17a);
+            
+        
+
+        marker_ced951856199dac30ac8ca347664ec0b.bindPopup(popup_2b057342484ee7eb6c3d6ed6538fa78e)
+        ;
+
+        
+    
+    
+            var marker_6a17417116c23e407bc9d9611d5e7a3c = L.marker(
+                [40.897655, -73.842617],
+                {}
+            ).addTo(map_449340166487f487d0d63e442e234923);
+        
+    
+        var popup_b31bea19e941aa4e983ef05543cf7088 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae485c4f32359329e16dfe58c65069d3 = $(`<div id="html_ae485c4f32359329e16dfe58c65069d3" style="width: 100.0%; height: 100.0%;">4300 MURDOCK AVENUE</div>`)[0];
+                popup_b31bea19e941aa4e983ef05543cf7088.setContent(html_ae485c4f32359329e16dfe58c65069d3);
+            
+        
+
+        marker_6a17417116c23e407bc9d9611d5e7a3c.bindPopup(popup_b31bea19e941aa4e983ef05543cf7088)
+        ;
+
+        
+    
+</script>
+</html>
